@@ -1,0 +1,54 @@
+name: backend-ci
+
+defaults:
+  run:
+    working-directory: server
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+    branches:
+      - staging
+      - main
+    paths:
+      - 'server/**'
+      - '!*.md'
+      - '!build/**'
+      - '!.gitignore'
+  push:
+    branches:
+      - staging
+      - main
+    paths:
+      - 'server/**'
+      - '!*.md'
+      - '!build/**'
+      - '!.gitignore'
+
+jobs:
+  lint:
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v7
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: "29"
+          gleam-version: "1.18.1"
+          rebar3-version: "3"
+      - run: gleam format --check src test
+
+  test:
+    if: github.event.pull_request.draft == false
+    steps:
+      - uses: actions/checkout@v7
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: "29"
+          gleam-version: "1.18.1"
+          rebar3-version: "3"
+      - run: gleam deps download
+      - run: gleam test

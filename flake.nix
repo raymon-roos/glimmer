@@ -17,7 +17,8 @@
       default = pkgs.mkShell {
         packages = with pkgs; [
           gleam
-          beamMinimal28Packages.erlang
+          beamMinimal29Packages.erlang
+          beamMinimal29Packages.rebar3
         ];
       };
     });
