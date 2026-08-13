@@ -11,6 +11,7 @@ pub fn route(req: Request) -> Response {
 
     ["hello"] -> handler.greeting(req, option.None)
     ["hello", name] -> handler.greeting(req, option.Some(name))
+    ["api", "hello", name] -> handler.json_greeting(req, name)
 
     _ -> wisp.not_found()
   }

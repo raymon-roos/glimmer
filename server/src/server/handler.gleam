@@ -1,19 +1,26 @@
 import gleam/option
+import lustre/element
+import lustre/element/html as h
 import server/middleware
 import wisp.{type Request, type Response}
 
 pub fn home(req: Request) -> Response {
-  use _req <- middleware.middleware(req)
-
-  let body = "<h1>Hello, world!</h1>"
-
-  wisp.html_response(body, 200)
+  h.div([], [h.h1([], [h.text("Hello, world!")])])
+  |> element.to_document_string()
+  |> wisp.html_response(200)
 }
 
 pub fn greeting(req: Request, name: option.Option(String)) -> Response {
-  use _req <- middleware.middleware(req)
+  h.div([], [
+    h.h1([], [h.text("Hello, " <> option.unwrap(name, "unknown") <> "!")]),
+  ])
+  |> element.to_document_string()
+  |> wisp.html_response(200)
+}
 
-  let body = "<h1>Hello, " <> option.unwrap(name, "unknown") <> "!</h1>"
-
-  wisp.html_response(body, 200)
+pub fn json_greeting(req: Request, name: String) -> Response {
+  wisp.json_response(
+    "{ \"greeting\": \"hello\", \"name\": \"" <> name <> "\" }",
+    200,
+  )
 }

@@ -1,8 +1,8 @@
 {
   "version": 11,
   "metadata": {
-    "instance_id": "962dc8de-46a6-49a6-8790-cd09735b72a3",
-    "saved_at": "2026-08-13T15:48:26.125780081Z",
+    "instance_id": "50a73f0f-fc80-4d83-9153-54547d919cc3",
+    "saved_at": "2026-08-14T19:23:05.427440058Z",
     "writer_version": "0.8.0",
     "writer_commit": "refs/tags/v0.8.0"
   },
@@ -12,7 +12,7 @@
     "boards": [
       {
         "active_sprint_id": null,
-        "card_counter": 9,
+        "card_counter": 11,
         "card_prefix": null,
         "completion_column_id": null,
         "created_at": "2026-08-13T13:42:51.839356391Z",
@@ -40,8 +40,8 @@
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
         "card_number": 4,
-        "column_id": "853cfa2d-144f-41c9-ba07-02d68ac3af8e",
-        "completed_at": null,
+        "column_id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "completed_at": "2026-08-13T16:51:55.294701424Z",
         "created_at": "2026-08-13T14:23:13.529659709Z",
         "description": null,
         "due_date": null,
@@ -68,44 +68,9 @@
             "status": "Planning"
           }
         ],
-        "status": "Todo",
+        "status": "Done",
         "title": "Task: make some inital items in kanban-rs",
-        "updated_at": "2026-08-13T15:04:51.170703288Z"
-      },
-      {
-        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
-        "card_number": 6,
-        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
-        "completed_at": null,
-        "created_at": "2026-08-13T14:50:55.942031545Z",
-        "description": null,
-        "due_date": null,
-        "id": "498fd51a-9115-47f9-b4e0-6a00b7bc5e95",
-        "points": null,
-        "position": 0,
-        "priority": "Medium",
-        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
-        "sprint_logs": [
-          {
-            "ended_at": "2026-08-13T15:04:42.074752152Z",
-            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
-            "sprint_name": "perpetual",
-            "sprint_number": 1,
-            "started_at": "2026-08-13T15:04:36.270732888Z",
-            "status": "Planning"
-          },
-          {
-            "ended_at": null,
-            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
-            "sprint_name": "perpetual",
-            "sprint_number": 1,
-            "started_at": "2026-08-13T15:04:51.170706640Z",
-            "status": "Planning"
-          }
-        ],
-        "status": "Todo",
-        "title": "Task: Move work items around different columns and observe their status",
-        "updated_at": "2026-08-13T15:04:51.170703288Z"
+        "updated_at": "2026-08-13T16:51:55.294709872Z"
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
@@ -136,24 +101,24 @@
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
-        "card_number": 3,
-        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
-        "completed_at": null,
-        "created_at": "2026-08-13T14:22:24.425928166Z",
+        "card_number": 6,
+        "column_id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "completed_at": "2026-08-13T16:52:51.588334037Z",
+        "created_at": "2026-08-13T14:50:55.942031545Z",
         "description": null,
         "due_date": null,
-        "id": "669fbc71-b8c8-4478-ae5c-de134b3cf1d0",
+        "id": "498fd51a-9115-47f9-b4e0-6a00b7bc5e95",
         "points": null,
         "position": 1,
         "priority": "Medium",
         "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
         "sprint_logs": [
           {
-            "ended_at": "2026-08-13T15:04:42.074766819Z",
+            "ended_at": "2026-08-13T15:04:42.074752152Z",
             "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
             "sprint_name": "perpetual",
             "sprint_number": 1,
-            "started_at": "2026-08-13T15:04:36.270741409Z",
+            "started_at": "2026-08-13T15:04:36.270732888Z",
             "status": "Planning"
           },
           {
@@ -161,13 +126,13 @@
             "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
             "sprint_name": "perpetual",
             "sprint_number": 1,
-            "started_at": "2026-08-13T15:04:51.170715650Z",
+            "started_at": "2026-08-13T15:04:51.170706640Z",
             "status": "Planning"
           }
         ],
-        "status": "Todo",
-        "title": "Learn: if & how kanban-rs can handle work item hiearchy",
-        "updated_at": "2026-08-13T15:46:29.939603399Z"
+        "status": "Done",
+        "title": "Task: Move work items around different columns and observe their status",
+        "updated_at": "2026-08-13T16:52:51.588342700Z"
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
@@ -206,50 +171,15 @@
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
-        "card_number": 5,
-        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
-        "completed_at": null,
-        "created_at": "2026-08-13T14:48:08.060008112Z",
-        "description": null,
-        "due_date": null,
-        "id": "f248b2b0-d7f3-4d37-a81f-094bd2b8ed3c",
-        "points": null,
-        "position": 2,
-        "priority": "Medium",
-        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
-        "sprint_logs": [
-          {
-            "ended_at": "2026-08-13T15:04:42.074779879Z",
-            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
-            "sprint_name": "perpetual",
-            "sprint_number": 1,
-            "started_at": "2026-08-13T15:04:36.270747625Z",
-            "status": "Planning"
-          },
-          {
-            "ended_at": null,
-            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
-            "sprint_name": "perpetual",
-            "sprint_number": 1,
-            "started_at": "2026-08-13T15:04:51.170722913Z",
-            "status": "Planning"
-          }
-        ],
-        "status": "Todo",
-        "title": "Learn: Work Item Status",
-        "updated_at": "2026-08-13T15:47:21.460195442Z"
-      },
-      {
-        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
         "card_number": 2,
-        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
-        "completed_at": null,
+        "column_id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "completed_at": "2026-08-14T19:23:02.070579295Z",
         "created_at": "2026-08-13T14:20:28.199561214Z",
         "description": null,
         "due_date": null,
         "id": "4289cdb9-aa7d-46be-80d6-23d3345a61f8",
         "points": null,
-        "position": 3,
+        "position": 2,
         "priority": "Medium",
         "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
         "sprint_logs": [
@@ -270,9 +200,106 @@
             "status": "Planning"
           }
         ],
-        "status": "Todo",
+        "status": "Done",
         "title": "Feat: Work Item Hierarchy",
-        "updated_at": "2026-08-13T15:47:29.653970179Z"
+        "updated_at": "2026-08-14T19:23:02.070587326Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 3,
+        "column_id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "completed_at": "2026-08-14T19:23:04.352315303Z",
+        "created_at": "2026-08-13T14:22:24.425928166Z",
+        "description": null,
+        "due_date": null,
+        "id": "669fbc71-b8c8-4478-ae5c-de134b3cf1d0",
+        "points": null,
+        "position": 3,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074766819Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270741409Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170715650Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Done",
+        "title": "Learn: if & how kanban-rs can handle work item hiearchy",
+        "updated_at": "2026-08-14T19:23:04.352323474Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 10,
+        "column_id": "f25bfabe-7d2b-4ac8-90b7-3e56f6be84e8",
+        "completed_at": null,
+        "created_at": "2026-08-13T15:54:26.921404630Z",
+        "description": "## Gleam web dev\n\nLustre full-stack applications are monorepos consisting of a client, server, and shared\nlibrary. I want some basic hello-world level placeholder code for each of this to showcase\nwhat the code and file structure looks like and what the fundamental pieces are.\n\n## Database\n\nFor data storage I'll need a database of some variety. I'm partial to PostgreSQL, even\nthough SQLite has extreme reliability.\n\nI might try Gel out again, because the object-graph-relational hybrid model and custom DSL\nseem really cool. Didn't super like how they implemented their own local dev hosting stuff\nthough. Too opinionated in how they automatically install and set up stuff on your\nmachine. And getting it to work with Gleam might be outside my power. Don't even know if\na connector library exists for Gleam.\n\nMaybe I should research if there's something that works particularly well with the kind of\ncalendar features I need. I don't think the relational model is that useful for orders.\nPrices change over time, that shouldn't affect orders that were long since paid.\n\n## Testing & CI\n\nApart from that, I need some testing: Unit testing for each individual project, and some\nsort of integration test for the whole thing together. I'd like to get into more advanced\nforms of testing, but that's for another story.\n\nI really liked using `hurl` in a previous project. Maybe I'll have a use for that again.\nBut from what I've seen, Wisp includes _really nice_ test helpers for simulating requests,\nso that kind of overlaps in functionality. Although I think asserting things parsed from\nHTTP responses might have a little nicer syntax in `hurl` than with\n`wisp.simulate_browser`. But that is also only the plain JSON/HTML responses from the\nserver, if I want to assert things about the interactive elements of the UI (if and when\nI ever get to that), I might need something more advanced. I hope `hurl` can do that, and\nI won't need some puppeteer or headless chrome or whatever nonsense.\n\nI'll want some CI/CD with GitHub actions. To run lints and tests, but I'd also like to\nbuild and publish an artifact of sorts.\n\n## Artifacts & CD\n\nDocker-compose for local development might also be a good thing. I'd love to build the\nimages using Nix, but I don't think that pairs well with docker-compose. Docker-compose\nfor local development is a little redundant if you already have a reproducible Nix dev\nshell. So maybe I'll think on that a little harder. Docker-compose is a little more\napproachable for people that aren't already Nix-pilled though.\n\nI think it might also be possible to bundle/package the application as some sort of\nErlang/beam artefact. Although I bet combining the JS client stuff is complicated. It\nwould be cool to make it reproducible with Nix, and automate it with CD and publish it\nsomewhere.\n",
+        "due_date": null,
+        "id": "4f9b41f1-26fd-4c74-b6ba-656875abc26d",
+        "points": null,
+        "position": 3,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:54:26.921460363Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Epic: Project Scaffold",
+        "updated_at": "2026-08-13T16:11:44.438163316Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 5,
+        "column_id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "completed_at": "2026-08-14T19:23:04.923913583Z",
+        "created_at": "2026-08-13T14:48:08.060008112Z",
+        "description": "I wonder whether you can set arbitrary custom metadata.\n\nThe answer is no.\n",
+        "due_date": null,
+        "id": "f248b2b0-d7f3-4d37-a81f-094bd2b8ed3c",
+        "points": null,
+        "position": 4,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074779879Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270747625Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170722913Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Done",
+        "title": "Learn: Work Item Status",
+        "updated_at": "2026-08-14T19:23:04.923922312Z"
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
@@ -300,6 +327,33 @@
         "status": "Todo",
         "title": "Story: secure HTTP headers",
         "updated_at": "2026-08-13T15:46:29.939644816Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 9,
+        "column_id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "completed_at": "2026-08-14T19:23:05.426991368Z",
+        "created_at": "2026-08-13T15:52:52.971098374Z",
+        "description": "As a developer  \nI want the backend server to use the Lustre API to return HTML elements & JSON\nIn order to have a basic foundation of how to use these parts in the application\n\n## As Is\n\nEmpty folder\n\n## To Be\n\nAdded `server/` sub Wisp project, using the Lustre library to compose HTML and JSON to\nreturn on different endpoints.\n\n## Acceptance Criteria\n\n- Tech stack is Gleam Lustre+Wisp full-stack\n- Folder structure for the server\n- Initial code examples showcasing how to parts are going to work together\n- GitHub actions workflow present for error / style linting and unit tests\n\n## Quality Criteria\n\n- Follows conventions and best-practices from Gleam and Lustre\n- Keeps security in mind\n- Keeps extensibility and maintainability in mind\n- Uses Git & Jujutsu to keep a linear, patch-oriented, one-thing-at-a-time change history\n- Documentation where relevant\n",
+        "due_date": null,
+        "id": "4e6306b2-5b17-4114-9f4c-f743bb2fc94c",
+        "points": null,
+        "position": 5,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:52:52.971178971Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Done",
+        "title": "Enable: return Lustre Elements & JSON",
+        "updated_at": "2026-08-14T19:23:05.426999888Z"
       }
     ],
     "columns": [
@@ -393,6 +447,12 @@
             "created_at": "2026-08-13T15:48:26.125340217Z",
             "source": "52cf64cd-a635-4c9a-bbec-8f85e81ec60c",
             "target": "08acb4c0-c61c-4d48-95a3-8203004da763"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T16:12:21.495860599Z",
+            "source": "4f9b41f1-26fd-4c74-b6ba-656875abc26d",
+            "target": "4e6306b2-5b17-4114-9f4c-f743bb2fc94c"
           }
         ]
       }

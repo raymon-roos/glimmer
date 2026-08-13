@@ -15,7 +15,8 @@ pub fn hello_world_test() {
 
   assert response.headers == [#("content-type", "text/html; charset=utf-8")]
 
-  assert simulate.read_body(response) == "<h1>Hello, world!</h1>"
+  assert simulate.read_body(response)
+    == "<!doctype html>\n<html><body><div><h1>Hello, world!</h1></div></body></html>"
 }
 
 pub fn hello_test() {
@@ -26,7 +27,8 @@ pub fn hello_test() {
 
   assert response.headers == [#("content-type", "text/html; charset=utf-8")]
 
-  assert simulate.read_body(response) == "<h1>Hello, unknown!</h1>"
+  assert simulate.read_body(response)
+    == "<!doctype html>\n<html><body><div><h1>Hello, unknown!</h1></div></body></html>"
 }
 
 pub fn hello_john_test() {
@@ -37,5 +39,6 @@ pub fn hello_john_test() {
 
   assert response.headers == [#("content-type", "text/html; charset=utf-8")]
 
-  assert simulate.read_body(response) == "<h1>Hello, john!</h1>"
+  assert simulate.read_body(response)
+    == "<!doctype html>\n<html><body><div><h1>Hello, john!</h1></div></body></html>"
 }
