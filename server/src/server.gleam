@@ -1,6 +1,6 @@
-import app/router
 import gleam/erlang/process
 import mist
+import server/router
 import wisp
 import wisp/wisp_mist
 

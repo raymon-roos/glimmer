@@ -1,5 +1,5 @@
-import app/middleware
 import gleam/option
+import server/middleware
 import wisp.{type Request, type Response}
 
 pub fn home(req: Request) -> Response {

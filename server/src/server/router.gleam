@@ -1,6 +1,6 @@
-import app/handler
-import app/middleware
 import gleam/option
+import server/handler
+import server/middleware
 import wisp.{type Request, type Response}
 
 pub fn route(req: Request) -> Response {

@@ -1,6 +1,6 @@
-import app/router
 import gleam/http
 import gleeunit
+import server/router
 import wisp/simulate
 
 pub fn main() -> Nil {
