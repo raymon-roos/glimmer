@@ -1,0 +1,416 @@
+{
+  "version": 11,
+  "metadata": {
+    "instance_id": "962dc8de-46a6-49a6-8790-cd09735b72a3",
+    "saved_at": "2026-08-13T15:48:26.125780081Z",
+    "writer_version": "0.8.0",
+    "writer_commit": "refs/tags/v0.8.0"
+  },
+  "data": {
+    "archived_boards": [],
+    "archived_cards": [],
+    "boards": [
+      {
+        "active_sprint_id": null,
+        "card_counter": 9,
+        "card_prefix": null,
+        "completion_column_id": null,
+        "created_at": "2026-08-13T13:42:51.839356391Z",
+        "description": "## Intro\n\nI'm new to this application, but the goal is to have a loose scrum-inspired KanBan board\nas plain-text data living inside the code repository.\n\nI imagine a PR that defines & refines the tasks & stories it works on, as well as the code\nit changes. This decouples project planning from any single planning/management/code forge\nplatform, as well as allowing comfy terminal UI & nvim editing. The code forge could even\nhave automated checks on the work items as well as the code, to ensure quality. (Though\nthis risks becoming a very perverse incentive.)\n\nI'd like something a little more human-readable than JSON as a backend, but I'll see how\nit goes. At least Nushell makes any structured data convenient to work with.\n\n## Glimmer (Better Name Pending)\n\nI mostly want to experiment with Gleam web development. I was a little naive going into\nthis, as it turns out that a full-stack Lustre application with SSR & client-side\nhydration is a little complicated, but I'm excited to try it out.\n\nThere's some really cool paradigms here, that I feel could be very powerful. I'm a little\nworried about Lustre's \"Model - Update - View\" single global state and pure function\narchitecture's performance, but we'll see. Not that I ever have or ever will make anything\nimportant enough that performance becomes a concern...\n\nThe rough idea for the project is to make an appointment, dossier, and billing management\nwebsite for healthcare professionals. Inspired by some recent trouble my mother\nexperienced in her line of work.\n\nIt sounds a little big, but I basically just want:\n\n- A calendar where you add appointments.\n- Some free-text notes attached to patients.\n- And a billing editor where you can add and tweak order line items to generate a PDF\n  (eventually).\n\nLong-term goals could be things like multi-tenancy and franchising:\n\n- Managing a stock of available products that can be sold by franchisees.\n- Gathering insights on the performance of the franchisees.\n- Rescheduling patients across franchisees.\n- Secure communication.\n- E-mailing.\n- Integration with bookkeeping software.\n- Automatic reminders: Patient needs to answer a questionnaire, visit the lab, products\n  restocked etc.\n\n## Conventions\n\nMy project planning is heavily influenced by my educational experience. Planning is\nbasically Kanban, because I'm not committing to sprint deadlines for a casual personal\nhobby project (yet). But task ontology is intended to follow Open-ICT's model:\n\n- Epic: Family of related steps in the user journey (vertical slice, see journey mapping)\n- Feature: A specific functionality, part of an Epic.\n- Story: A concrete unit of (multidisciplinary) work implementing (part of) a Feature.\n  - Learning story: work item for acquiring requisite skill for a work item.\n  - Research story: work item where the result is new knowledge, typically in the form of\n    a decision.\n- Task: The lowest common denominator of work items: a story has a list of tasks. Disperses\n  task between team members of different disciplines. A task is less than a day's work.\n\nWork items are written in the\n\n> \"**As A** <stakeholder> **I want** <functionality> **So that** <motivation>\"\n\nformulation. This way story items stay consistent and focused on the\ninterests of the users and/or stakeholders.\n\nWork items have _Acceptance Criteria_ (When is the work complete?) and _quality criteria_\n(When is the work good?)\n",
+        "id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "name": "Glimmer",
+        "next_sprint_number": 1,
+        "position": 0,
+        "sprint_counters": {
+          "sprint": 2
+        },
+        "sprint_duration_days": null,
+        "sprint_name_used_count": 1,
+        "sprint_names": [
+          "perpetual"
+        ],
+        "sprint_prefix": null,
+        "task_list_view": "ColumnView",
+        "task_sort_field": "Default",
+        "task_sort_order": "Ascending",
+        "updated_at": "2026-08-13T15:46:04.974979768Z"
+      }
+    ],
+    "cards": [
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 4,
+        "column_id": "853cfa2d-144f-41c9-ba07-02d68ac3af8e",
+        "completed_at": null,
+        "created_at": "2026-08-13T14:23:13.529659709Z",
+        "description": null,
+        "due_date": null,
+        "id": "e96afdf1-3ba9-4e43-a56a-3c1123f2f818",
+        "points": null,
+        "position": 0,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074772616Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270744272Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170719491Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Task: make some inital items in kanban-rs",
+        "updated_at": "2026-08-13T15:04:51.170703288Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 6,
+        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
+        "completed_at": null,
+        "created_at": "2026-08-13T14:50:55.942031545Z",
+        "description": null,
+        "due_date": null,
+        "id": "498fd51a-9115-47f9-b4e0-6a00b7bc5e95",
+        "points": null,
+        "position": 0,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074752152Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270732888Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170706640Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Task: Move work items around different columns and observe their status",
+        "updated_at": "2026-08-13T15:04:51.170703288Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 7,
+        "column_id": "daf5ff92-c11a-41f1-a7ab-cc6d222d47bc",
+        "completed_at": null,
+        "created_at": "2026-08-13T15:09:38.722705571Z",
+        "description": null,
+        "due_date": null,
+        "id": "52cf64cd-a635-4c9a-bbec-8f85e81ec60c",
+        "points": null,
+        "position": 0,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:09:38.722763330Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Epic: security",
+        "updated_at": "2026-08-13T15:47:12.043866516Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 3,
+        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
+        "completed_at": null,
+        "created_at": "2026-08-13T14:22:24.425928166Z",
+        "description": null,
+        "due_date": null,
+        "id": "669fbc71-b8c8-4478-ae5c-de134b3cf1d0",
+        "points": null,
+        "position": 1,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074766819Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270741409Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170715650Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Learn: if & how kanban-rs can handle work item hiearchy",
+        "updated_at": "2026-08-13T15:46:29.939603399Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 1,
+        "column_id": "f25bfabe-7d2b-4ac8-90b7-3e56f6be84e8",
+        "completed_at": null,
+        "created_at": "2026-08-13T14:17:21.264551936Z",
+        "description": "This is an attempt at making an epic.\n",
+        "due_date": null,
+        "id": "4de35a6d-7be3-4ea8-beb6-5e9a25298312",
+        "points": null,
+        "position": 2,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074760673Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270738057Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170712786Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Epic: Project Management",
+        "updated_at": "2026-08-13T15:46:29.939612060Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 5,
+        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
+        "completed_at": null,
+        "created_at": "2026-08-13T14:48:08.060008112Z",
+        "description": null,
+        "due_date": null,
+        "id": "f248b2b0-d7f3-4d37-a81f-094bd2b8ed3c",
+        "points": null,
+        "position": 2,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074779879Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270747625Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:51.170722913Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Learn: Work Item Status",
+        "updated_at": "2026-08-13T15:47:21.460195442Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 2,
+        "column_id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
+        "completed_at": null,
+        "created_at": "2026-08-13T14:20:28.199561214Z",
+        "description": null,
+        "due_date": null,
+        "id": "4289cdb9-aa7d-46be-80d6-23d3345a61f8",
+        "points": null,
+        "position": 3,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": "2026-08-13T15:04:42.074785048Z",
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:36.270750488Z",
+            "status": "Planning"
+          },
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:04:47.710818828Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Feat: Work Item Hierarchy",
+        "updated_at": "2026-08-13T15:47:29.653970179Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 8,
+        "column_id": "f25bfabe-7d2b-4ac8-90b7-3e56f6be84e8",
+        "completed_at": null,
+        "created_at": "2026-08-13T15:10:17.993137240Z",
+        "description": "As a user\nI want secure HTTP headers\nin order to have basic protection against XSS\n\n## As Is\n\nThere is basically no foundation yet for the application. Wisp does ship a selection of\nmiddleware to us, one of which is for strict CSP headers.\n\n## To Be\n\nA middleware function that sets a variety of important HTTP response headers that relate\nto security, such as `content-security-policy`, with actual values tuned according to\nbalance security and needs for the application.\n\nWithout CSP headers, any injected resource, such as JavaScript will be fetched/executed\nwithout scrutiny. Validation and sanitization is _still required_ to defend against\ncross-site scripting.\n\n## Acceptance Criteria\n\n- CSP header present to limit trusted origins for script/style/image sources\n- Other headers are also used to increase security profile:\n  - <https://github.com/scott-ray-wilson/plume>\n  - <https://helmet.js.org/>\n\n## Quality Criteria\n\n- CSP header is tuned for maximum security:\n  <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>\n- Headers are automatically included in HTTP responses from the backend server through\n  middleware.\n",
+        "due_date": null,
+        "id": "08acb4c0-c61c-4d48-95a3-8203004da763",
+        "points": null,
+        "position": 5,
+        "priority": "Medium",
+        "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "sprint_logs": [
+          {
+            "ended_at": null,
+            "sprint_id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+            "sprint_name": "perpetual",
+            "sprint_number": 1,
+            "started_at": "2026-08-13T15:10:17.993174256Z",
+            "status": "Planning"
+          }
+        ],
+        "status": "Todo",
+        "title": "Story: secure HTTP headers",
+        "updated_at": "2026-08-13T15:46:29.939644816Z"
+      }
+    ],
+    "columns": [
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "created_at": "2026-08-13T14:01:26.616108200Z",
+        "id": "daf5ff92-c11a-41f1-a7ab-cc6d222d47bc",
+        "name": "Ideating",
+        "position": 0,
+        "updated_at": "2026-08-13T14:01:33.925914619Z",
+        "wip_limit": null
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "created_at": "2026-08-13T14:01:46.961541663Z",
+        "id": "f25bfabe-7d2b-4ac8-90b7-3e56f6be84e8",
+        "name": "Backlog",
+        "position": 1,
+        "updated_at": "2026-08-13T14:01:48.170747539Z",
+        "wip_limit": null
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "created_at": "2026-08-13T13:42:51.839364283Z",
+        "id": "63b1be48-fa78-487a-ba6d-be760b4f84d0",
+        "name": "Todo",
+        "position": 3,
+        "updated_at": "2026-08-13T14:02:05.542971449Z",
+        "wip_limit": null
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "created_at": "2026-08-13T13:42:51.839369521Z",
+        "id": "853cfa2d-144f-41c9-ba07-02d68ac3af8e",
+        "name": "Doing",
+        "position": 4,
+        "updated_at": "2026-08-13T14:02:05.301798495Z",
+        "wip_limit": null
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "created_at": "2026-08-13T13:42:51.839371896Z",
+        "id": "b436dfc3-bf1f-4124-831f-c63a1d726886",
+        "name": "Done",
+        "position": 5,
+        "updated_at": "2026-08-13T14:02:05.113156200Z",
+        "wip_limit": null
+      }
+    ],
+    "graph": {
+      "blocks": {
+        "edges": []
+      },
+      "relates": {
+        "edges": []
+      },
+      "spawns": {
+        "edges": [
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T14:20:54.335328707Z",
+            "source": "4de35a6d-7be3-4ea8-beb6-5e9a25298312",
+            "target": "4289cdb9-aa7d-46be-80d6-23d3345a61f8"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T14:22:30.147678530Z",
+            "source": "4289cdb9-aa7d-46be-80d6-23d3345a61f8",
+            "target": "669fbc71-b8c8-4478-ae5c-de134b3cf1d0"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T14:23:21.534963065Z",
+            "source": "669fbc71-b8c8-4478-ae5c-de134b3cf1d0",
+            "target": "e96afdf1-3ba9-4e43-a56a-3c1123f2f818"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T14:51:10.126091491Z",
+            "source": "f248b2b0-d7f3-4d37-a81f-094bd2b8ed3c",
+            "target": "498fd51a-9115-47f9-b4e0-6a00b7bc5e95"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T14:52:04.922416683Z",
+            "source": "4289cdb9-aa7d-46be-80d6-23d3345a61f8",
+            "target": "f248b2b0-d7f3-4d37-a81f-094bd2b8ed3c"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-13T15:48:26.125340217Z",
+            "source": "52cf64cd-a635-4c9a-bbec-8f85e81ec60c",
+            "target": "08acb4c0-c61c-4d48-95a3-8203004da763"
+          }
+        ]
+      }
+    },
+    "sprints": [
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_prefix": null,
+        "created_at": "2026-08-13T14:14:07.160675984Z",
+        "end_date": null,
+        "id": "d3fe9d54-3cb0-48da-9621-50adf879c633",
+        "name_index": 0,
+        "prefix": "sprint",
+        "sprint_number": 1,
+        "start_date": null,
+        "status": "Planning",
+        "updated_at": "2026-08-13T14:14:07.160675984Z"
+      }
+    ]
+  }
+}

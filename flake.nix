@@ -19,6 +19,8 @@
           gleam
           beamMinimal29Packages.erlang
           beamMinimal29Packages.rebar3
+
+          kanban
         ];
       };
     });
