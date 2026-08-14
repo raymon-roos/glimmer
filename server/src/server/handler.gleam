@@ -1,3 +1,4 @@
+import gleam/json
 import gleam/option
 import lustre/element
 import lustre/element/html as h
@@ -19,8 +20,10 @@ pub fn greeting(req: Request, name: option.Option(String)) -> Response {
 }
 
 pub fn json_greeting(req: Request, name: String) -> Response {
-  wisp.json_response(
-    "{ \"greeting\": \"hello\", \"name\": \"" <> name <> "\" }",
-    200,
-  )
+  json.object([
+    #("greeting", json.string("hello")),
+    #("name", json.string(name)),
+  ])
+  |> json.to_string
+  |> wisp.json_response(200)
 }
