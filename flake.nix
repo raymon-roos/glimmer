@@ -20,6 +20,8 @@
           beamMinimal29Packages.erlang
           beamMinimal29Packages.rebar3
 
+          hurl
+
           kanban
         ];
       };
