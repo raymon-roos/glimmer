@@ -1,0 +1,21 @@
+FROM ghcr.io/gleam-lang/gleam:v1.18.1-erlang-alpine AS build
+WORKDIR /app
+COPY gleam.toml manifest.toml ./
+RUN gleam deps download
+COPY src/ src/
+RUN gleam export erlang-shipment
+
+
+FROM docker.io/erlang:29.0-alpine
+RUN addgroup --system webapp && \
+    adduser --system webapp -g webapp
+USER webapp
+COPY --from=build /app/build/erlang-shipment /app
+WORKDIR /app
+ENTRYPOINT ["sh", "/app/entrypoint.sh"]
+CMD ["run"]
+
+
+LABEL org.opencontainers.image.source=https://github.com/raymon-roos/glimmer
+LABEL org.opencontainers.image.description="My container image"
+LABEL org.opencontainers.image.licenses="Apache-2.0"

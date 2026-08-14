@@ -1,4 +1,7 @@
+import envoy
 import gleam/erlang/process
+import gleam/int
+import gleam/result
 import mist
 import server/router
 import wisp
@@ -7,17 +10,16 @@ import wisp/wisp_mist
 pub fn main() {
   wisp.configure_logger()
 
-  // Here we generate a secret key, but in a real application you would want to
-  // load this from somewhere so that it is not regenerated on every restart.
-  let secret_key_base = wisp.random_string(64)
+  let secret = envoy.get("SECRET_KEY") |> result.unwrap(wisp.random_string(64))
+  let host = envoy.get("ADDRESS") |> result.unwrap("127.0.0.1")
+  let port = envoy.get("PORT") |> result.try(int.parse) |> result.unwrap(8000)
 
   let assert Ok(_) =
-    wisp_mist.handler(router.route, secret_key_base)
+    wisp_mist.handler(router.route, secret)
     |> mist.new
-    |> mist.port(8000)
+    |> mist.bind(host)
+    |> mist.port(port)
     |> mist.start
 
-  // The web server runs in new Erlang process, so put this one to sleep while
-  // it works concurrently.
   process.sleep_forever()
 }

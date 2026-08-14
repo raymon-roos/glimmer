@@ -1,0 +1,11 @@
+services:
+  server:
+    build:
+      context: server/
+      dockerfile: dockerfile
+    restart: unless-stopped
+    environment:
+      ADDRESS: "0.0.0.0"
+      PORT: "8000"
+    ports:
+      - 127.0.0.1:8000:${PORT}
