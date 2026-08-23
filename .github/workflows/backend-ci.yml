@@ -86,6 +86,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v7
         with:
+          file: dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           annotations: ${{ steps.meta.outputs.annotations }}
