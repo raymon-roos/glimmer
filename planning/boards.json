@@ -1,8 +1,8 @@
 {
   "version": 11,
   "metadata": {
-    "instance_id": "50a73f0f-fc80-4d83-9153-54547d919cc3",
-    "saved_at": "2026-08-14T19:23:05.427440058Z",
+    "instance_id": "0d57485f-6e34-459c-877d-d91a264e49ac",
+    "saved_at": "2026-08-23T10:07:39.013007619Z",
     "writer_version": "0.8.0",
     "writer_commit": "refs/tags/v0.8.0"
   },
@@ -12,7 +12,7 @@
     "boards": [
       {
         "active_sprint_id": null,
-        "card_counter": 11,
+        "card_counter": 13,
         "card_prefix": null,
         "completion_column_id": null,
         "created_at": "2026-08-13T13:42:51.839356391Z",
@@ -133,6 +133,24 @@
         "status": "Done",
         "title": "Task: Move work items around different columns and observe their status",
         "updated_at": "2026-08-13T16:52:51.588342700Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 12,
+        "column_id": "daf5ff92-c11a-41f1-a7ab-cc6d222d47bc",
+        "completed_at": null,
+        "created_at": "2026-08-23T10:06:43.880151846Z",
+        "description": "In particular, find some diagramming workflow that works well with my values and\nprinciples.\n\nI like code-first diagramming. Maybe I'll use D2 again.\n",
+        "due_date": null,
+        "id": "c2717d10-a8bf-4450-b648-37503f0e1a08",
+        "points": null,
+        "position": 1,
+        "priority": "Medium",
+        "sprint_id": null,
+        "sprint_logs": [],
+        "status": "Todo",
+        "title": "Enabler: find a software design process",
+        "updated_at": "2026-08-23T10:07:39.012453663Z"
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
@@ -265,6 +283,24 @@
         "status": "Todo",
         "title": "Epic: Project Scaffold",
         "updated_at": "2026-08-13T16:11:44.438163316Z"
+      },
+      {
+        "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
+        "card_number": 11,
+        "column_id": "f25bfabe-7d2b-4ac8-90b7-3e56f6be84e8",
+        "completed_at": null,
+        "created_at": "2026-08-23T09:58:20.398717504Z",
+        "description": "as a developer\nI want to set up datastar\nIn order to simplify front-end development\n\n## As is\n\nNo frontend code yet, but intentions to use Lustre for full stack. Lustre has its own\narchitecture for reactive UIs.\n\n## To be\n\nUse datastar for reactivity in the UI. Return HTML elements with datastar attributes from\nthe Lustre back-end. Implement SSE routes to send UI patches. I might have to reconsider\nusing Lustre at all, since frontend seems to be its primary concern, and I'm not sure if\nit offers anything in the backend beyond what Wisp does.\n\n## Acceptance Criteria\n\n- Include the datastar library the website's pages.\n- Implement a basic counter with an SSE route, to demonstrate the principle.\n\n## Quality Criteria\n\n- Use a checksum when including the datastar library module for improved security.\n  Prevents loading modified code in case of a successful XSS attack.\n",
+        "due_date": null,
+        "id": "3476546c-dd99-47bb-8e48-58c964b7356e",
+        "points": null,
+        "position": 3,
+        "priority": "Medium",
+        "sprint_id": null,
+        "sprint_logs": [],
+        "status": "Todo",
+        "title": "Enabler: pivot to datastar",
+        "updated_at": "2026-08-23T10:05:56.362025373Z"
       },
       {
         "board_id": "c8b3c01b-ebd0-4c63-9be5-f8d5f5ede039",
@@ -453,6 +489,12 @@
             "created_at": "2026-08-13T16:12:21.495860599Z",
             "source": "4f9b41f1-26fd-4c74-b6ba-656875abc26d",
             "target": "4e6306b2-5b17-4114-9f4c-f743bb2fc94c"
+          },
+          {
+            "archived_at": null,
+            "created_at": "2026-08-23T09:58:55.149647429Z",
+            "source": "4f9b41f1-26fd-4c74-b6ba-656875abc26d",
+            "target": "3476546c-dd99-47bb-8e48-58c964b7356e"
           }
         ]
       }
