@@ -15,6 +15,7 @@ on:
       - staging
       - main
     paths:
+      - '.github/workflows/**'
       - 'server/**'
       - '!*.md'
       - '!build/**'
@@ -24,6 +25,7 @@ on:
       - staging
       - main
     paths:
+      - '.github/workflows/**'
       - 'server/**'
       - '!*.md'
       - '!build/**'
