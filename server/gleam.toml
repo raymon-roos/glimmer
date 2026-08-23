@@ -21,6 +21,9 @@ wisp = ">= 2.2.2 and < 3.0.0"
 mist = ">= 6.0.3 and < 7.0.0"
 lustre = ">= 5.7.1 and < 6.0.0"
 envoy = ">= 1.2.0 and < 2.0.0"
+datastar = ">= 4.0.1 and < 5.0.0"
+datastar_lustre = ">= 4.0.0 and < 5.0.0"
+datastar_wisp = ">= 5.0.0 and < 6.0.0"
 
 [dev_dependencies]
 gleeunit = ">= 1.0.0 and < 2.0.0"

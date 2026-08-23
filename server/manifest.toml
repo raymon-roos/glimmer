@@ -7,6 +7,9 @@
 # You should check this file into your source control repository.
 
 packages = [
+  { name = "datastar", version = "4.0.1", build_tools = ["gleam"], requirements = ["gleam_json", "gleam_stdlib"], otp_app = "datastar", source = "hex", outer_checksum = "F60989E2E0354520DBC3BE94E4CCA1B168343370ED34BC9210417870D824A355" },
+  { name = "datastar_lustre", version = "4.0.0", build_tools = ["gleam"], requirements = ["gleam_json", "gleam_stdlib", "lustre"], otp_app = "datastar_lustre", source = "hex", outer_checksum = "2B49C4B61923C69C5A8E42AF9FD0AB8764B8BF0C81B310FB2152862F3AC70342" },
+  { name = "datastar_wisp", version = "5.0.0", build_tools = ["gleam"], requirements = ["datastar", "gleam_stdlib", "wisp"], otp_app = "datastar_wisp", source = "hex", outer_checksum = "222F7FF24BED89EABC30710182D35D6D226007DFCA071EF2018924E8DCD2297D" },
   { name = "directories", version = "1.2.0", build_tools = ["gleam"], requirements = ["envoy", "gleam_stdlib", "platform", "simplifile"], otp_app = "directories", source = "hex", outer_checksum = "D13090CFCDF6759B87217E8DDD73A75903A700148A82C1D33799F333E249BF9E" },
   { name = "envoy", version = "1.2.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "envoy", source = "hex", outer_checksum = "9C6FBB6BFA02A52798BEEC5977A738CAD6E4A057F4B67FD0C8061AD2502C191A" },
   { name = "exception", version = "2.1.1", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "exception", source = "hex", outer_checksum = "6BDEA95248093599391C3B5DF1835C5C6A86C353C2F99CE539B450E3432FE117" },
@@ -32,6 +35,9 @@ packages = [
 ]
 
 [requirements]
+datastar = { version = ">= 4.0.1 and < 5.0.0" }
+datastar_lustre = { version = ">= 4.0.0 and < 5.0.0" }
+datastar_wisp = { version = ">= 5.0.0 and < 6.0.0" }
 envoy = { version = ">= 1.2.0 and < 2.0.0" }
 gleam_erlang = { version = ">= 1.3.0 and < 2.0.0" }
 gleam_http = { version = ">= 4.3.0 and < 5.0.0" }
